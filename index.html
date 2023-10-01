@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <script src="https://kit.fontawesome.com/a910cbf3fd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <title>صفحه ورود</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <section class="card-left">
+            <div class="card-left-img">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="card-left-icon">
+                <a class="card-left-link" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="card-left-link" href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="card-left-link" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a class="card-left-link" href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="card-left-text">
+                <p>آیا حساب کاربری دارید؟</p>
+                <a href="#">ثبت نام</a>
+            </div>
+        </section>
+        <section class="card-right">
+            <p class="card-right-paragraph">ورود به حساب کاربری</p>
+            <form class="card-right-inputs">
+                <label for="email" class="card-right-label">نام کاربری یا ایمیل</label>
+                <input type="email" id="email" class="card-right-input">
+                <label for="password" class="card-right-label">رمز عبور</label>
+                <input type="password" id="password" class="card-right-input">
+                <label for="checkbox" class="card-right-label">مرا به خاطر بسپار</label>
+                <input type="checkbox" id="checkbox">
+                <button type="submit">ورود</button>
+            </form>
+            <a class="card-right-link" href="#">رمز عبور خود را فراموش کرده اید؟</a>
+        </section>
+    </div>
 </body>
+
 </html>
