@@ -18,6 +18,14 @@ $colors: (
     @return map-get($colors, $colors-name)
 }
 
+$socialMediaColors: 1 #3b5998, 2 #962fbf, 3 #517fa4, 4 #000000;
+
+@each $color in $socialMediaColors {
+    .card-left-icon-link:nth-child(#{nth($color, 1)}) {
+        color: nth($color, 2);
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -45,10 +53,54 @@ body {
     background-color: color(primary);
     border-bottom-left-radius: 2rem;
     border-top-left-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 25rem;
+    grid-template-rows: minmax(15rem, 20rem) repeat(2, minmax(3rem, 5rem));
 
     &-img {
-        width: 15rem;
-        height: 15rem;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 12rem;
+        height: 12rem;
+        margin: 3rem auto 5rem auto;
+    }
+
+    &-icon {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 1.5rem auto 1.5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &-link {
+            width: 2rem;
+            height: 2rem;
+            margin: 0 0.25rem;
+            border-radius: 100%;
+            background-color: color(tertiary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+
+    &-text {
+        text-align: center;
+
+        p {
+            margin: 0.5rem 0;
+            font-family: sahel;
+            font-size: 0.9rem;
+            color: color(tertiary);
+        }
+
+        a {
+            color: color(tertiary);
+            font-family: sahel;
+            font-size: 0.9rem;
+        }
     }
 }
 
