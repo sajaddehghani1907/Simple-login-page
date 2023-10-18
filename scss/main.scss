@@ -8,9 +8,54 @@
     src: url('Sahel.woff2') format('woff2');
 }
 
+$colors: (
+    primary: #EE3E38,
+    secondary: #8D021F,
+    tertiary: #ffffff
+);
+
+@function color($colors-name) {
+    @return map-get($colors, $colors-name)
+}
+
 body {
     margin: 0;
     padding: 0;
     background-image: url("/Simple\ login\ page/img/background-image.png");
     background-size: cover;
+}
+
+.container {
+    margin: 8rem auto;
+    max-width: 50rem;
+    max-height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20rem, 25rem));
+    grid-auto-rows: minmax(25rem, 30rem);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.184);
+}
+
+.card-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: color(primary);
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 0.5rem;
+
+    &-img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+.card-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: color(tertiary);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 0.5rem;
 }
