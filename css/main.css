@@ -1,0 +1,13 @@
+@font-face {
+  font-family: shabnam;
+  src: url("Shabnam.woff2") format("woff2"); }
+
+@font-face {
+  font-family: sahel;
+  src: url("Sahel.woff2") format("woff2"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/Simple login page/img/background-image.png");
+  background-size: cover; }
