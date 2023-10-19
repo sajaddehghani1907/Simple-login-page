@@ -84,6 +84,69 @@ body {
 .card-right {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-template-rows: minmax(3rem, 7rem) minmax(15rem, 19rem) minmax(3rem, 4rem);
   background-color: #ffffff;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 0.5rem; }
+  .card-right-paragraph {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-family: sahel;
+    text-align: center;
+    color: #EE3E38;
+    font-size: 2rem; }
+  .card-right-inputs {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 20rem;
+    height: 15rem;
+    margin: 2rem auto 2rem auto; }
+    .card-right-inputs-label {
+      font-family: shabnam;
+      font-size: 1rem;
+      display: block;
+      color: #303030;
+      margin-bottom: 0.25rem; }
+    .card-right-inputs-input {
+      width: 100%;
+      height: 2.25rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      border-radius: 0.25rem;
+      border: 1px solid #303030;
+      color: #303030;
+      font-family: shabnam; }
+    .card-right-inputs-checkbox {
+      display: flex; }
+      .card-right-inputs-checkbox input {
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-right: 0.5rem; }
+      .card-right-inputs-checkbox label {
+        font-size: 0.75rem; }
+    .card-right-inputs button {
+      display: block;
+      width: 100%;
+      height: 2.5rem;
+      font-family: shabnam;
+      font-size: 1rem;
+      background-color: #EE3E38;
+      color: #ffffff;
+      border: 1px solid #EE3E38;
+      border-radius: 0.25rem;
+      transition: all 0.5s;
+      margin-top: 1rem;
+      cursor: pointer; }
+      .card-right-inputs button:hover {
+        background-color: #8D021F;
+        border: 1px solid #8D021F; }
+  .card-right-link {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    color: #303030;
+    font-family: sahel;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: auto; }
