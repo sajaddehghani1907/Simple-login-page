@@ -27,6 +27,26 @@ $socialMediaColors: 1 #3b5998, 2 #962fbf, 3 #517fa4, 4 #000000;
     }
 }
 
+@mixin responsive ($bp) {
+    @if ($bp == md) {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+    
+    @if ($bp == sm) {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    
+    @if ($bp == xs) {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -46,6 +66,14 @@ body {
     border-bottom-left-radius: 2rem;
     border-top-left-radius: 0.5rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.184);
+
+    @include responsive(md) {
+        margin: 9.75rem auto;
+        max-width: 40rem;
+        max-height: 25rem;
+        grid-template-columns: repeat(2, minmax(15rem, 20rem));
+        grid-template-rows: minmax(20rem, 25rem);
+    }
 }
 
 .card-left {
@@ -58,12 +86,23 @@ body {
     grid-template-columns: 25rem;
     grid-template-rows: minmax(15rem, 20rem) repeat(2, minmax(3rem, 5rem));
 
+    @include responsive(md) {
+        grid-template-columns: 20rem;
+        grid-template-rows: minmax(10rem, 17rem) minmax(2rem, 4rem) minmax(2rem, 4rem);
+    }
+
     &-img {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         width: 12rem;
         height: 12rem;
         margin: 3rem auto 5rem auto;
+
+        @include responsive(md) {
+            width: 9rem;
+            height: 9rem;
+            margin: 4rem auto 6rem auto;
+        }
     }
 
     &-icon {
@@ -84,6 +123,11 @@ body {
             justify-content: center;
             align-items: center;
             text-decoration: none;
+
+            @include responsive(md) {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
     }
 
@@ -95,12 +139,21 @@ body {
             font-family: sahel;
             font-size: 0.9rem;
             color: color(tertiary);
+
+            @include responsive(md) {
+                margin: 0.25rem 0;
+                font-size: 0.75rem;
+            }
         }
 
         a {
             color: color(tertiary);
             font-family: sahel;
             font-size: 0.9rem;
+
+            @include responsive(md) {
+                font-size: 0.75rem;
+            }
         }
     }
 }
@@ -115,6 +168,11 @@ body {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 0.5rem;
 
+    @include responsive(md) {
+        grid-template-columns: 20rem;
+        grid-template-rows: minmax(4rem, 6rem) minmax(10rem, 15rem) minmax(1rem, 4rem);
+    }
+
     &-paragraph {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -122,6 +180,10 @@ body {
         text-align: center;
         color: color(primary);
         font-size: 2rem;
+
+        @include responsive(md) {
+            font-size: 1.65rem;
+        }
     }
 
     &-inputs {
@@ -131,12 +193,22 @@ body {
         height: 15rem;
         margin: 2rem auto 2rem auto;
 
+        @include responsive(md) {
+            width: 15rem;
+            height: 12rem;
+            margin: 1.5rem auto 1.5rem auto;
+        }
+
         &-label {
             font-family: shabnam;
             font-size: 1rem;
             display: block;
             color: color(quternary);
             margin-bottom: 0.25rem;
+
+            @include responsive(md)  {
+                font-size: 0.9rem;
+            }
         }
 
         &-input {
@@ -148,6 +220,11 @@ body {
             border: 1px solid color(quternary);
             color: color(quternary);
             font-family: shabnam;
+
+            @include responsive(md) {
+                height: 2rem;
+                margin-bottom: 0.6rem;
+            }
         }
 
         &-checkbox {
@@ -157,10 +234,20 @@ body {
                 width: 0.75rem;
                 height: 0.75rem;
                 margin-right: 0.5rem;
+
+                @include responsive(md) {
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    margin-right: 0.3rem;
+                }
             }
 
             label {
                 font-size: 0.75rem;
+
+                @include responsive(md) {
+                    font-size: 0.75rem;
+                }
             }
         }
 
@@ -178,6 +265,11 @@ body {
             margin-top: 1rem;
             cursor: pointer;
 
+            @include responsive(md) {
+                height: 2rem;
+                font-size: 0.9rem;
+            }
+
             &:hover {
                 background-color: color(secondary);
                 border: 1px solid color(secondary);
@@ -193,5 +285,9 @@ body {
         font-size: 0.9rem;
         text-align: center;
         margin: auto;
+
+        @include responsive(md) {
+            font-size: 0.8rem;
+        }
     }
 }

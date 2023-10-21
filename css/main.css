@@ -36,6 +36,13 @@ body {
   border-bottom-left-radius: 2rem;
   border-top-left-radius: 0.5rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.184); }
+  @media (max-width: 992px) {
+    .container {
+      margin: 9.75rem auto;
+      max-width: 40rem;
+      max-height: 25rem;
+      grid-template-columns: repeat(2, minmax(15rem, 20rem));
+      grid-template-rows: minmax(20rem, 25rem); } }
 
 .card-left {
   grid-column: 1 / 2;
@@ -46,12 +53,21 @@ body {
   display: grid;
   grid-template-columns: 25rem;
   grid-template-rows: minmax(15rem, 20rem) repeat(2, minmax(3rem, 5rem)); }
+  @media (max-width: 992px) {
+    .card-left {
+      grid-template-columns: 20rem;
+      grid-template-rows: minmax(10rem, 17rem) minmax(2rem, 4rem) minmax(2rem, 4rem); } }
   .card-left-img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 12rem;
     height: 12rem;
     margin: 3rem auto 5rem auto; }
+    @media (max-width: 992px) {
+      .card-left-img {
+        width: 9rem;
+        height: 9rem;
+        margin: 4rem auto 6rem auto; } }
   .card-left-icon {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -69,6 +85,10 @@ body {
       justify-content: center;
       align-items: center;
       text-decoration: none; }
+      @media (max-width: 992px) {
+        .card-left-icon-link {
+          width: 1.5rem;
+          height: 1.5rem; } }
   .card-left-text {
     text-align: center; }
     .card-left-text p {
@@ -76,10 +96,17 @@ body {
       font-family: sahel;
       font-size: 0.9rem;
       color: #ffffff; }
+      @media (max-width: 992px) {
+        .card-left-text p {
+          margin: 0.25rem 0;
+          font-size: 0.75rem; } }
     .card-left-text a {
       color: #ffffff;
       font-family: sahel;
       font-size: 0.9rem; }
+      @media (max-width: 992px) {
+        .card-left-text a {
+          font-size: 0.75rem; } }
 
 .card-right {
   grid-column: 2 / 3;
@@ -90,6 +117,10 @@ body {
   background-color: #ffffff;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 0.5rem; }
+  @media (max-width: 992px) {
+    .card-right {
+      grid-template-columns: 20rem;
+      grid-template-rows: minmax(4rem, 6rem) minmax(10rem, 15rem) minmax(1rem, 4rem); } }
   .card-right-paragraph {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -97,18 +128,29 @@ body {
     text-align: center;
     color: #EE3E38;
     font-size: 2rem; }
+    @media (max-width: 992px) {
+      .card-right-paragraph {
+        font-size: 1.65rem; } }
   .card-right-inputs {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     width: 20rem;
     height: 15rem;
     margin: 2rem auto 2rem auto; }
+    @media (max-width: 992px) {
+      .card-right-inputs {
+        width: 15rem;
+        height: 12rem;
+        margin: 1.5rem auto 1.5rem auto; } }
     .card-right-inputs-label {
       font-family: shabnam;
       font-size: 1rem;
       display: block;
       color: #303030;
       margin-bottom: 0.25rem; }
+      @media (max-width: 992px) {
+        .card-right-inputs-label {
+          font-size: 0.9rem; } }
     .card-right-inputs-input {
       width: 100%;
       height: 2.25rem;
@@ -118,14 +160,26 @@ body {
       border: 1px solid #303030;
       color: #303030;
       font-family: shabnam; }
+      @media (max-width: 992px) {
+        .card-right-inputs-input {
+          height: 2rem;
+          margin-bottom: 0.6rem; } }
     .card-right-inputs-checkbox {
       display: flex; }
       .card-right-inputs-checkbox input {
         width: 0.75rem;
         height: 0.75rem;
         margin-right: 0.5rem; }
+        @media (max-width: 992px) {
+          .card-right-inputs-checkbox input {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-right: 0.3rem; } }
       .card-right-inputs-checkbox label {
         font-size: 0.75rem; }
+        @media (max-width: 992px) {
+          .card-right-inputs-checkbox label {
+            font-size: 0.75rem; } }
     .card-right-inputs button {
       display: block;
       width: 100%;
@@ -139,6 +193,10 @@ body {
       transition: all 0.5s;
       margin-top: 1rem;
       cursor: pointer; }
+      @media (max-width: 992px) {
+        .card-right-inputs button {
+          height: 2rem;
+          font-size: 0.9rem; } }
       .card-right-inputs button:hover {
         background-color: #8D021F;
         border: 1px solid #8D021F; }
@@ -150,3 +208,6 @@ body {
     font-size: 0.9rem;
     text-align: center;
     margin: auto; }
+    @media (max-width: 992px) {
+      .card-right-link {
+        font-size: 0.8rem; } }
