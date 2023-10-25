@@ -50,6 +50,11 @@ body {
       max-height: 30rem;
       grid-template-columns: minmax(20rem, 25rem);
       grid-template-rows: minmax(20rem, 25rem) minmax(3rem, 5rem); } }
+  @media (max-width: 576px) {
+    .container {
+      margin: 14rem auto;
+      max-width: 20rem;
+      grid-template-columns: minmax(15rem, 20rem); } }
 
 .card-left {
   grid-column: 1 / 2;
@@ -118,6 +123,9 @@ body {
           width: 1.85rem;
           height: 1.85rem;
           margin: 0 0.5rem; } }
+      @media (max-width: 576px) {
+        .card-left-icon-link {
+          margin: 0 0.25rem; } }
   .card-left-text {
     text-align: center; }
     @media (max-width: 768px) {
@@ -127,6 +135,9 @@ body {
         bottom: 24.25rem;
         display: flex;
         flex-direction: row-reverse; } }
+    @media (max-width: 576px) {
+      .card-left-text {
+        left: 5.75rem; } }
     .card-left-text p {
       margin: 0.5rem 0;
       font-family: sahel;
@@ -173,6 +184,9 @@ body {
       grid-template-columns: 25rem;
       border-bottom-right-radius: 0;
       border-top-left-radius: 0.5rem; } }
+  @media (max-width: 576px) {
+    .card-right {
+      grid-template-columns: 20rem; } }
   .card-right-paragraph {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -197,6 +211,9 @@ body {
     @media (max-width: 768px) {
       .card-right-inputs {
         width: 20rem; } }
+    @media (max-width: 576px) {
+      .card-right-inputs {
+        width: 15rem; } }
     .card-right-inputs-label {
       font-family: shabnam;
       font-size: 1rem;
@@ -269,3 +286,6 @@ body {
     @media (max-width: 768px) {
       .card-right-link {
         font-size: 0.9rem; } }
+    @media (max-width: 576px) {
+      .card-right-link {
+        font-size: 0.8rem; } }

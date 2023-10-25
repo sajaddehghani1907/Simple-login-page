@@ -82,6 +82,12 @@ body {
         grid-template-columns: minmax(20rem, 25rem);
         grid-template-rows: minmax(20rem, 25rem) minmax(3rem, 5rem);
     }
+
+    @include responsive(xs) {
+        margin: 14rem auto;
+        max-width: 20rem;
+        grid-template-columns: minmax(15rem, 20rem);
+    }
 }
 
 .card-left {
@@ -162,6 +168,10 @@ body {
                 height: 1.85rem;
                 margin: 0 0.5rem;
             }
+
+            @include responsive(xs) {
+                margin: 0 0.25rem;
+            }
         }
     }
 
@@ -174,6 +184,10 @@ body {
             bottom: 24.25rem;
             display: flex;
             flex-direction: row-reverse;
+        }
+
+        @include responsive(xs) {
+            left: 5.75rem;
         }
 
         p {
@@ -234,6 +248,10 @@ body {
         border-top-left-radius: 0.5rem;
     }
 
+    @include responsive(xs) {
+        grid-template-columns: 20rem;
+    }
+
     &-paragraph {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -262,6 +280,10 @@ body {
 
         @include responsive(sm) {
             width: 20rem;
+        }
+
+        @include responsive(xs) {
+            width: 15rem;
         }
 
         &-label {
@@ -357,6 +379,10 @@ body {
 
         @include responsive(sm) {
             font-size: 0.9rem;
+        }
+
+        @include responsive(xs) {
+            font-size: 0.8rem;
         }
     }
 }
