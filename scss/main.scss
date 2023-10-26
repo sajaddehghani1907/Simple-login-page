@@ -114,6 +114,7 @@ body {
         grid-template-rows: minmax(3rem, 5rem);
         position: relative;
         border-bottom-right-radius: 0.5rem;
+        border-top-left-radius: 0;
     }
 
     &-img {
