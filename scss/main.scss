@@ -348,7 +348,7 @@ body {
             color: color(tertiary);
             border: 1px solid color(primary);
             border-radius: 0.25rem;
-            transition: all 0.5s;
+            transition: border-color, background-color 0.5s;
             margin-top: 1rem;
             cursor: pointer;
 
