@@ -1,0 +1,292 @@
+@font-face {
+  font-family: shabnam;
+  src: url("Shabnam.woff2") format("woff2"); }
+
+@font-face {
+  font-family: sahel;
+  src: url("Sahel.woff2") format("woff2"); }
+
+.card-left-icon-link:nth-child(1) {
+  color: #3b5998; }
+
+.card-left-icon-link:nth-child(2) {
+  color: #962fbf; }
+
+.card-left-icon-link:nth-child(3) {
+  color: #517fa4; }
+
+.card-left-icon-link:nth-child(4) {
+  color: #000000; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/Simple login page/img/background-image.png");
+  background-size: cover; }
+
+.container {
+  margin: 8rem auto;
+  max-width: 50rem;
+  max-height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 25rem));
+  grid-auto-rows: minmax(25rem, 30rem);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 0.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.184); }
+  @media (max-width: 992px) {
+    .container {
+      margin: 9.75rem auto;
+      max-width: 40rem;
+      max-height: 25rem;
+      grid-template-columns: repeat(2, minmax(15rem, 20rem));
+      grid-template-rows: minmax(20rem, 25rem); } }
+  @media (max-width: 768px) {
+    .container {
+      margin: 7.1rem auto;
+      max-width: 25rem;
+      max-height: 30rem;
+      grid-template-columns: minmax(20rem, 25rem);
+      grid-template-rows: minmax(20rem, 25rem) minmax(3rem, 5rem); } }
+  @media (max-width: 576px) {
+    .container {
+      margin: 14rem auto;
+      max-width: 20rem;
+      grid-template-columns: minmax(15rem, 20rem); } }
+
+.card-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #EE3E38;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-template-rows: minmax(15rem, 20rem) repeat(2, minmax(3rem, 5rem)); }
+  @media (max-width: 992px) {
+    .card-left {
+      grid-template-columns: 20rem;
+      grid-template-rows: minmax(10rem, 17rem) minmax(2rem, 4rem) minmax(2rem, 4rem); } }
+  @media (max-width: 768px) {
+    .card-left {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      max-width: 25rem;
+      max-height: 5rem;
+      grid-template-columns: minmax(20rem, 25rem);
+      grid-template-rows: minmax(3rem, 5rem);
+      position: relative;
+      border-bottom-right-radius: 0.5rem;
+      border-top-left-radius: 0; } }
+  .card-left-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 12rem;
+    height: 12rem;
+    margin: 3rem auto 5rem auto; }
+    @media (max-width: 992px) {
+      .card-left-img {
+        width: 9rem;
+        height: 9rem;
+        margin: 4rem auto 6rem auto; } }
+    @media (max-width: 768px) {
+      .card-left-img {
+        display: none; } }
+  .card-left-icon {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 1.5rem auto 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 768px) {
+      .card-left-icon {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2; } }
+    .card-left-icon-link {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 0.25rem;
+      border-radius: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; }
+      @media (max-width: 992px) {
+        .card-left-icon-link {
+          width: 1.5rem;
+          height: 1.5rem; } }
+      @media (max-width: 768px) {
+        .card-left-icon-link {
+          width: 1.85rem;
+          height: 1.85rem;
+          margin: 0 0.5rem; } }
+      @media (max-width: 576px) {
+        .card-left-icon-link {
+          margin: 0 0.25rem; } }
+  .card-left-text {
+    text-align: center; }
+    @media (max-width: 768px) {
+      .card-left-text {
+        position: absolute;
+        left: 8rem;
+        bottom: 24.25rem;
+        display: flex;
+        flex-direction: row-reverse; } }
+    @media (max-width: 576px) {
+      .card-left-text {
+        left: 5.75rem; } }
+    .card-left-text p {
+      margin: 0.5rem 0;
+      font-family: sahel;
+      font-size: 0.9rem;
+      color: #ffffff; }
+      @media (max-width: 992px) {
+        .card-left-text p {
+          margin: 0.25rem 0;
+          font-size: 0.75rem; } }
+      @media (max-width: 768px) {
+        .card-left-text p {
+          color: #303030;
+          margin: 0 0 0 0.5rem;
+          font-size: 0.7rem; } }
+    .card-left-text a {
+      color: #ffffff;
+      font-family: sahel;
+      font-size: 0.9rem; }
+      @media (max-width: 992px) {
+        .card-left-text a {
+          font-size: 0.75rem; } }
+      @media (max-width: 768px) {
+        .card-left-text a {
+          color: #303030;
+          font-size: 0.7rem; } }
+
+.card-right {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-template-rows: minmax(3rem, 7rem) minmax(15rem, 19rem) minmax(3rem, 4rem);
+  background-color: #ffffff;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 0.5rem; }
+  @media (max-width: 992px) {
+    .card-right {
+      grid-template-columns: 20rem;
+      grid-template-rows: minmax(4rem, 6rem) minmax(10rem, 15rem) minmax(1rem, 4rem); } }
+  @media (max-width: 768px) {
+    .card-right {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      grid-template-columns: 25rem;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 0.5rem; } }
+  @media (max-width: 576px) {
+    .card-right {
+      grid-template-columns: 20rem; } }
+  .card-right-paragraph {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-family: sahel;
+    text-align: center;
+    color: #EE3E38;
+    font-size: 2rem; }
+    @media (max-width: 992px) {
+      .card-right-paragraph {
+        font-size: 1.65rem; } }
+  .card-right-inputs {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 20rem;
+    height: 15rem;
+    margin: 2rem auto 2rem auto; }
+    @media (max-width: 992px) {
+      .card-right-inputs {
+        width: 15rem;
+        height: 12rem;
+        margin: 1.5rem auto 1.5rem auto; } }
+    @media (max-width: 768px) {
+      .card-right-inputs {
+        width: 20rem; } }
+    @media (max-width: 576px) {
+      .card-right-inputs {
+        width: 15rem; } }
+    .card-right-inputs-label {
+      font-family: shabnam;
+      font-size: 1rem;
+      display: block;
+      color: #303030;
+      margin-bottom: 0.25rem; }
+      @media (max-width: 992px) {
+        .card-right-inputs-label {
+          font-size: 0.9rem; } }
+    .card-right-inputs-input {
+      width: 100%;
+      height: 2.25rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      border-radius: 0.25rem;
+      border: 1px solid #303030;
+      color: #303030;
+      font-family: shabnam; }
+      @media (max-width: 992px) {
+        .card-right-inputs-input {
+          height: 2rem;
+          margin-bottom: 0.6rem; } }
+    .card-right-inputs-checkbox {
+      display: flex; }
+      .card-right-inputs-checkbox input {
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-right: 0.5rem; }
+        @media (max-width: 992px) {
+          .card-right-inputs-checkbox input {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-right: 0.3rem; } }
+      .card-right-inputs-checkbox label {
+        font-size: 0.75rem; }
+        @media (max-width: 992px) {
+          .card-right-inputs-checkbox label {
+            font-size: 0.75rem; } }
+    .card-right-inputs button {
+      display: block;
+      width: 100%;
+      height: 2.5rem;
+      font-family: shabnam;
+      font-size: 1rem;
+      background-color: #EE3E38;
+      color: #ffffff;
+      border: 1px solid #EE3E38;
+      border-radius: 0.25rem;
+      transition: border-color, background-color 0.5s;
+      margin-top: 1rem;
+      cursor: pointer; }
+      @media (max-width: 992px) {
+        .card-right-inputs button {
+          height: 2rem;
+          font-size: 0.9rem; } }
+      .card-right-inputs button:hover {
+        background-color: #8D021F;
+        border: 1px solid #8D021F; }
+  .card-right-link {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    color: #303030;
+    font-family: sahel;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: auto; }
+    @media (max-width: 992px) {
+      .card-right-link {
+        font-size: 0.8rem; } }
+    @media (max-width: 768px) {
+      .card-right-link {
+        font-size: 0.9rem; } }
+    @media (max-width: 576px) {
+      .card-right-link {
+        font-size: 0.8rem; } }
