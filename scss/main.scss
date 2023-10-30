@@ -9,6 +9,7 @@
 }
 
 $colors: (
+    quternary2: rgba(247, 246, 246, 0.897),
     primary: #EE3E38,
     secondary: #8D021F,
     tertiary: #ffffff,
@@ -50,8 +51,7 @@ $socialMediaColors: 1 #3b5998, 2 #962fbf, 3 #517fa4, 4 #000000;
 body {
     margin: 0;
     padding: 0;
-    background-image: url("/Simple\ login\ page/img/background-image.png");
-    background-size: cover;
+    background-color: color(quternary2);
 }
 
 .container {

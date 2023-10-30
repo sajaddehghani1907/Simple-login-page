@@ -21,8 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/Simple login page/img/background-image.png");
-  background-size: cover; }
+  background-color: rgba(247, 246, 246, 0.897); }
 
 .container {
   margin: 8rem auto;
