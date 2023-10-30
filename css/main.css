@@ -21,8 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/Simple login page/img/background-image.png");
-  background-size: cover; }
+  background-color: rgba(247, 246, 246, 0.897); }
 
 .container {
   margin: 8rem auto;
@@ -219,8 +218,9 @@ body {
       font-family: shabnam;
       font-size: 1rem;
       display: block;
+      float: right;
       color: #303030;
-      margin-bottom: 0.25rem; }
+      margin-bottom: 0.5rem; }
       @media (max-width: 992px) {
         .card-right-inputs-label {
           font-size: 0.9rem; } }
@@ -238,11 +238,14 @@ body {
           height: 2rem;
           margin-bottom: 0.6rem; } }
     .card-right-inputs-checkbox {
-      display: flex; }
+      display: flex;
+      flex-direction: row-reverse;
+      float: right;
+      margin-bottom: 0.75rem; }
       .card-right-inputs-checkbox input {
         width: 0.75rem;
         height: 0.75rem;
-        margin-right: 0.5rem; }
+        margin-right: 0; }
         @media (max-width: 992px) {
           .card-right-inputs-checkbox input {
             width: 0.75rem;
